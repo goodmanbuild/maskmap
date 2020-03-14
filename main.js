@@ -142,12 +142,12 @@ var bindContent = function (properties, mask_adult, mask_child) {
     var phone = properties.phone;
     var updated = properties.updated;
     var address = properties.address;
-    var content = "<h3>" + name + "</h3>";
+    var content = "<h2>" + name + "</h2>";
     content += "<div>成人口罩：" + mask_adult + "</div>";
     content += "<div>小孩口罩：" + mask_child + "</div>";
     content += "<div>資料更新：" + updated + "</div>";
     content += "<hr />";
-    content += "<div>電話：<a href=tel:'" + phone + "'>" + phone + "</a></div>";
+    content += '<div>電話：<a href=tel:+886-' + Number( phone.substring(0,2)).toString() + '>' + phone + "</a></div>";
     content += "<div>地址：<a target='_blank' href='https://www.google.com.tw/maps/place/" + address + "' >" + address + "</a></div>";
     return content;
 }
