@@ -9,16 +9,30 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <script>        
+
+        var v = new Date().getMilliseconds(); //毫秒(這樣每次都不同)
+
+        var maincssHref = "main.css?v=" + v;
+
+        window.document.write("<link rel='stylesheet' type='text/css' href='" + maincssHref + "' />");      
+
+        var mainjsSrc = document.createElement("script");
+
+        document.getElementsByTagName("head")[0].appendChild(mainjsSrc);
+
+        mainjsSrc.src = "main.js?v=" + v;
+    </script>
 </head>
 <body>
     <div id="map">
     </div>
 </body>
 
-<link id="maincss" href="main.css" rel="stylesheet" />
-<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
-<script id="mainjs" src="main.js"></script>
+<!--<link id="maincss" href="main.css" rel="stylesheet" />-->
+<!--<script id="mainjs" src="main.js"></script>-->
 
 </html>
