@@ -4,21 +4,26 @@
     <meta charset="utf-8" />
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <meta HTTP-EQUIV="EXPIRES" CONTENT="0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="exkpires" content="0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+    <!--<script>
+        document.getElementById('maincss').setAttribute('href', 'main.css?v=' + new Date().getMilliseconds())
 
+
+    </script>-->
 </head>
 <body>
     <div id="map">
     </div>
 </body>
 
-<link href="main.css" rel="stylesheet" />
+<link id="maincss" href="main.css" rel="stylesheet" />
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
-<script src="main.js"></script>
+<script id="mainjs" src="main.js"></script>
 
 </html>

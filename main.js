@@ -1,4 +1,4 @@
-﻿
+﻿//new Date().getMilliseconds();
 var map;
 var markers;
 var lat = 25;
