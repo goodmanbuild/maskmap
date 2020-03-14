@@ -56,8 +56,8 @@ html, body {
         line-height: 30px;
     }
 
-h3{
-    text-align:center;
+h3 {
+    text-align: center;
 }
 
 
@@ -73,4 +73,8 @@ h3{
     text-align: center;
     text-decoration: none;
     font: bold 18px'Lucida Console', Monaco, monospace;
+}
+
+.leaflet-popup-content {
+    font-size: 16px;
 }
